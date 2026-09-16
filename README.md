@@ -3,10 +3,11 @@ GreenTab — Web Energy & Memory Saver
 > A lightweight Manifest V3 Chrome extension designed to reduce client-side CPU rendering load, freeze background media bloat, and defer offscreen image rendering.
 
 ##  Features
-- **Background Media Freeze:** Automatically pauses offscreen autoplaying `<video>` and `<audio>` elements.
-- **Safe DOM Trimming:** Purges non-interactive, hidden leftover elements using safety filters to preserve site functionality.
-- **Image Deferral:** Injects `loading="lazy"` attributes onto images far below the viewport.
-- **Session Tracking:** Persists total cleaned nodes and estimated CPU savings across your browser session.
+
+- **Freezes Hidden Videos:** Automatically pauses offscreen background video and audio loops, stopping them from draining your battery and processor.
+- **Cleans Invisible Bloat:** Safely deletes hidden, non-working elements left behind by heavy web pages without breaking buttons, forms, or menus.
+- **Lazy Image Loading:** Delays loading images far down the page until you scroll to them, saving both internet data and memory.
+- **Tracks Energy Savings:** Counts every cleaned element and calculates your estimated CPU savings live inside the popup.
 
 ##  Tech Stack
 - **Architecture:** Chrome Extension Manifest V3
