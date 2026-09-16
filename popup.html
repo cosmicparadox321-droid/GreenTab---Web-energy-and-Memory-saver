@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 260px; font-family: system-ui, sans-serif; padding: 14px; background: #0f172a; color: #f8fafc; margin: 0; }
+    h3 { margin: 0 0 10px 0; color: #22c55e; }
+    p { font-size: 12px; color: #94a3b8; margin-bottom: 12px; }
+    button { width: 100%; padding: 10px; background: #22c55e; color: #022c22; border: none; border-radius: 6px; font-weight: 700; cursor: pointer; }
+    button:disabled { opacity: 0.6; cursor: not-allowed; }
+    .stats { margin-top: 12px; padding: 10px; background: #1e293b; border-radius: 6px; font-size: 12px; display: flex; flex-direction: column; gap: 6px; }
+    .stats[hidden] { display: none; }
+    .val { color: #22c55e; font-weight: bold; float: right; }
+  </style>
+</head>
+<body>
+  <h3>🌱 GreenTab</h3>
+  <p>Clean DOM bloat, pause background media, and reduce power consumption.</p>
+
+  <button id="optimizeBtn"><span id="optimizeLabel">Optimize Page</span></button>
+
+  <div id="statsBox" class="stats" hidden>
+    <div>Nodes Cleaned: <span id="nodesCount" class="val">0</span></div>
+    <div>Media Paused: <span id="mediaPaused" class="val">0</span></div>
+    <div>Lazy Loaded: <span id="lazyLoaded" class="val">0</span></div>
+    <div>Est. CPU Saved: <span id="cpuSaved" class="val">0%</span></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
